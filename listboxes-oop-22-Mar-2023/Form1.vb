@@ -45,7 +45,7 @@
         If answer = DialogResult.Yes Then ListBox1.Items.Clear()
     End Sub
 
-    Private Sub ApproxSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ApproxSearchToolStripMenuItem.Click
+    Private Sub ExactSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ApproxSearchToolStripMenuItem.Click
         ListBox1.ClearSelected()
         Dim searchItem As String
         searchItem = InputBox("What are you searching for?", "Exact search")
@@ -58,5 +58,20 @@
         Else
             MessageBox.Show("The item is not on the list")
         End If
+    End Sub
+
+    Private Sub ApproxSearchToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ApproxSearchToolStripMenuItem1.Click
+        ListBox1.ClearSelected()
+        Dim searchItem As String
+        searchItem = InputBox("What are you searching for?", "Approx search")
+        searchItem = searchItem.Trim()
+        If searchItem = Nothing Then Exit Sub
+        Dim index As Integer
+        For index = 0 To ListBox1.Items.Count - 1
+            If ListBox1.Items(index).ToString.Contains(searchItem) Then
+                ListBox1.SetSelected(index, True)
+            End If
+        Next
+
     End Sub
 End Class

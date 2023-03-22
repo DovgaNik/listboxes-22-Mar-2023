@@ -30,6 +30,7 @@ Partial Class Form1
         Me.RemoveSelectedItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RemoveEverytingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ApproxSearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ApproxSearchToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,7 +42,7 @@ Partial Class Form1
         Me.ListBox1.Location = New System.Drawing.Point(0, 27)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
-        Me.ListBox1.Size = New System.Drawing.Size(212, 424)
+        Me.ListBox1.Size = New System.Drawing.Size(403, 424)
         Me.ListBox1.TabIndex = 0
         '
         'MenuStrip1
@@ -50,13 +51,13 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActionsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(406, 28)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ActionsToolStripMenuItem
         '
-        Me.ActionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddAnItemToolStripMenuItem, Me.RemoveAnItemToolStripMenuItem, Me.RemoveSelectedItemsToolStripMenuItem, Me.RemoveEverytingToolStripMenuItem, Me.ApproxSearchToolStripMenuItem})
+        Me.ActionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddAnItemToolStripMenuItem, Me.RemoveAnItemToolStripMenuItem, Me.RemoveSelectedItemsToolStripMenuItem, Me.RemoveEverytingToolStripMenuItem, Me.ApproxSearchToolStripMenuItem, Me.ApproxSearchToolStripMenuItem1})
         Me.ActionsToolStripMenuItem.Name = "ActionsToolStripMenuItem"
         Me.ActionsToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
         Me.ActionsToolStripMenuItem.Text = "Actions"
@@ -91,11 +92,17 @@ Partial Class Form1
         Me.ApproxSearchToolStripMenuItem.Size = New System.Drawing.Size(245, 26)
         Me.ApproxSearchToolStripMenuItem.Text = "Exact search"
         '
+        'ApproxSearchToolStripMenuItem1
+        '
+        Me.ApproxSearchToolStripMenuItem1.Name = "ApproxSearchToolStripMenuItem1"
+        Me.ApproxSearchToolStripMenuItem1.Size = New System.Drawing.Size(245, 26)
+        Me.ApproxSearchToolStripMenuItem1.Text = "Approx search"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(406, 450)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -116,4 +123,5 @@ Partial Class Form1
     Friend WithEvents RemoveSelectedItemsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RemoveEverytingToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ApproxSearchToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ApproxSearchToolStripMenuItem1 As ToolStripMenuItem
 End Class
