@@ -31,6 +31,8 @@ Partial Class Form1
         Me.RemoveEverytingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ApproxSearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ApproxSearchToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EdititngToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,7 +50,7 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActionsToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActionsToolStripMenuItem, Me.EdititngToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(406, 28)
@@ -98,6 +100,19 @@ Partial Class Form1
         Me.ApproxSearchToolStripMenuItem1.Size = New System.Drawing.Size(245, 26)
         Me.ApproxSearchToolStripMenuItem1.Text = "Approx search"
         '
+        'EdititngToolStripMenuItem
+        '
+        Me.EdititngToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditToolStripMenuItem})
+        Me.EdititngToolStripMenuItem.Name = "EdititngToolStripMenuItem"
+        Me.EdititngToolStripMenuItem.Size = New System.Drawing.Size(75, 24)
+        Me.EdititngToolStripMenuItem.Text = "Edititng"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.EditToolStripMenuItem.Text = "Edit"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -124,4 +139,6 @@ Partial Class Form1
     Friend WithEvents RemoveEverytingToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ApproxSearchToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ApproxSearchToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents EdititngToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
 End Class

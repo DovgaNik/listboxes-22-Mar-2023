@@ -80,4 +80,16 @@
         End If
 
     End Sub
+
+    Private Sub EditToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditToolStripMenuItem.Click
+        Dim index As Integer
+        index = ListBox1.SelectedIndex
+
+        If index <> -1 Then
+            ListBox1.Items(index) = InputBox("Edit the item", "Editor", ListBox1.Items(index))
+        Else
+            MessageBox.Show("Errorrrrrrr: you have not selected anything")
+        End If
+
+    End Sub
 End Class
