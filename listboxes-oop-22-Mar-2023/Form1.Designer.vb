@@ -26,6 +26,7 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ActionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddAnItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RemoveAnItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,7 +52,7 @@ Partial Class Form1
         '
         'ActionsToolStripMenuItem
         '
-        Me.ActionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddAnItemToolStripMenuItem})
+        Me.ActionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddAnItemToolStripMenuItem, Me.RemoveAnItemToolStripMenuItem})
         Me.ActionsToolStripMenuItem.Name = "ActionsToolStripMenuItem"
         Me.ActionsToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
         Me.ActionsToolStripMenuItem.Text = "Actions"
@@ -61,6 +62,12 @@ Partial Class Form1
         Me.AddAnItemToolStripMenuItem.Name = "AddAnItemToolStripMenuItem"
         Me.AddAnItemToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.AddAnItemToolStripMenuItem.Text = "Add an item"
+        '
+        'RemoveAnItemToolStripMenuItem
+        '
+        Me.RemoveAnItemToolStripMenuItem.Name = "RemoveAnItemToolStripMenuItem"
+        Me.RemoveAnItemToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.RemoveAnItemToolStripMenuItem.Text = "Remove an item"
         '
         'Form1
         '
@@ -83,4 +90,5 @@ Partial Class Form1
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ActionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddAnItemToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RemoveAnItemToolStripMenuItem As ToolStripMenuItem
 End Class
