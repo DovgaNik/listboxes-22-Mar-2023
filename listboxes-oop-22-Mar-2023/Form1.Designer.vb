@@ -29,6 +29,7 @@ Partial Class Form1
         Me.RemoveAnItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RemoveSelectedItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RemoveEverytingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ApproxSearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -55,7 +56,7 @@ Partial Class Form1
         '
         'ActionsToolStripMenuItem
         '
-        Me.ActionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddAnItemToolStripMenuItem, Me.RemoveAnItemToolStripMenuItem, Me.RemoveSelectedItemsToolStripMenuItem, Me.RemoveEverytingToolStripMenuItem})
+        Me.ActionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddAnItemToolStripMenuItem, Me.RemoveAnItemToolStripMenuItem, Me.RemoveSelectedItemsToolStripMenuItem, Me.RemoveEverytingToolStripMenuItem, Me.ApproxSearchToolStripMenuItem})
         Me.ActionsToolStripMenuItem.Name = "ActionsToolStripMenuItem"
         Me.ActionsToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
         Me.ActionsToolStripMenuItem.Text = "Actions"
@@ -84,6 +85,12 @@ Partial Class Form1
         Me.RemoveEverytingToolStripMenuItem.Size = New System.Drawing.Size(245, 26)
         Me.RemoveEverytingToolStripMenuItem.Text = "Remove everyting"
         '
+        'ApproxSearchToolStripMenuItem
+        '
+        Me.ApproxSearchToolStripMenuItem.Name = "ApproxSearchToolStripMenuItem"
+        Me.ApproxSearchToolStripMenuItem.Size = New System.Drawing.Size(245, 26)
+        Me.ApproxSearchToolStripMenuItem.Text = "Exact search"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -108,4 +115,5 @@ Partial Class Form1
     Friend WithEvents RemoveAnItemToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RemoveSelectedItemsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RemoveEverytingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ApproxSearchToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -44,4 +44,19 @@
         answer = MessageBox.Show("Are you sure", "Remove all", MessageBoxButtons.YesNo)
         If answer = DialogResult.Yes Then ListBox1.Items.Clear()
     End Sub
+
+    Private Sub ApproxSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ApproxSearchToolStripMenuItem.Click
+        ListBox1.ClearSelected()
+        Dim searchItem As String
+        searchItem = InputBox("What are you searching for?", "Exact search")
+        searchItem = searchItem.Trim()
+        If searchItem = Nothing Then Exit Sub
+        Dim searchRes = ListBox1.FindStringExact(searchItem)
+        If searchRes <> -1 Then
+            'MessageBox.Show("The item is on the list")
+            ListBox1.SelectedIndex = searchRes
+        Else
+            MessageBox.Show("The item is not on the list")
+        End If
+    End Sub
 End Class
