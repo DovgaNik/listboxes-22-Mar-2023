@@ -33,6 +33,8 @@ Partial Class Form1
         Me.ApproxSearchToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EdititngToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SelectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InvertSelectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,7 +52,7 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActionsToolStripMenuItem, Me.EdititngToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActionsToolStripMenuItem, Me.EdititngToolStripMenuItem, Me.SelectionToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(406, 28)
@@ -113,6 +115,19 @@ Partial Class Form1
         Me.EditToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
+        'SelectionToolStripMenuItem
+        '
+        Me.SelectionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InvertSelectionToolStripMenuItem})
+        Me.SelectionToolStripMenuItem.Name = "SelectionToolStripMenuItem"
+        Me.SelectionToolStripMenuItem.Size = New System.Drawing.Size(84, 24)
+        Me.SelectionToolStripMenuItem.Text = "Selection"
+        '
+        'InvertSelectionToolStripMenuItem
+        '
+        Me.InvertSelectionToolStripMenuItem.Name = "InvertSelectionToolStripMenuItem"
+        Me.InvertSelectionToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.InvertSelectionToolStripMenuItem.Text = "Invert selection"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -141,4 +156,6 @@ Partial Class Form1
     Friend WithEvents ApproxSearchToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents EdititngToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SelectionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InvertSelectionToolStripMenuItem As ToolStripMenuItem
 End Class
