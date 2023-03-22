@@ -35,6 +35,7 @@ Partial Class Form1
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SelectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InvertSelectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -112,12 +113,12 @@ Partial Class Form1
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(118, 26)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'SelectionToolStripMenuItem
         '
-        Me.SelectionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InvertSelectionToolStripMenuItem})
+        Me.SelectionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InvertSelectionToolStripMenuItem, Me.ToolStripMenuItem1})
         Me.SelectionToolStripMenuItem.Name = "SelectionToolStripMenuItem"
         Me.SelectionToolStripMenuItem.Size = New System.Drawing.Size(84, 24)
         Me.SelectionToolStripMenuItem.Text = "Selection"
@@ -127,6 +128,11 @@ Partial Class Form1
         Me.InvertSelectionToolStripMenuItem.Name = "InvertSelectionToolStripMenuItem"
         Me.InvertSelectionToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.InvertSelectionToolStripMenuItem.Text = "Invert selection"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         '
         'Form1
         '
@@ -158,4 +164,5 @@ Partial Class Form1
     Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SelectionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InvertSelectionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
 End Class
