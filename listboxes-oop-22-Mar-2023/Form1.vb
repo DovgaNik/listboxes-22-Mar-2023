@@ -65,13 +65,19 @@
         Dim searchItem As String
         searchItem = InputBox("What are you searching for?", "Approx search")
         searchItem = searchItem.Trim()
+        Dim count As Integer = 0
         If searchItem = Nothing Then Exit Sub
         Dim index As Integer
         For index = 0 To ListBox1.Items.Count - 1
             If ListBox1.Items(index).ToString.Contains(searchItem) Then
                 ListBox1.SetSelected(index, True)
+                count += 1
             End If
         Next
+
+        If count = 0 Then
+            MessageBox.Show("No item matches the search", "Error")
+        End If
 
     End Sub
 End Class
