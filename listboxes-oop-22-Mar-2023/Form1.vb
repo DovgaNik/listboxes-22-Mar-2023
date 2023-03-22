@@ -103,7 +103,9 @@ Public Class Form1
     Private Sub InvertSelectionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InvertSelectionToolStripMenuItem.Click
         Dim index As Integer
 
-        ListBox1.SetSelected(index, Not ListBox1.GetSelected(index))
+        For index = 0 To ListBox1.Items.Count - 1
+            ListBox1.SetSelected(index, Not ListBox1.GetSelected(index))
+        Next
 
     End Sub
 
