@@ -85,6 +85,11 @@
         Dim index As Integer
         index = ListBox1.SelectedIndex
 
+        If ListBox1.SelectedItems.Count <> 1 Then
+            MessageBox.Show("Please, select only one item")
+            Exit Sub
+        End If
+
         If index <> -1 Then
             ListBox1.Items(index) = InputBox("Edit the item", "Editor", ListBox1.Items(index))
         Else
