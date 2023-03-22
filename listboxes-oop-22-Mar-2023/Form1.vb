@@ -106,4 +106,8 @@ Public Class Form1
         ListBox1.SetSelected(index, Not ListBox1.GetSelected(index))
 
     End Sub
+
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        ListBox1.ClearSelected()
+    End Sub
 End Class

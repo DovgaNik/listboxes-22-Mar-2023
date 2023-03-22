@@ -133,6 +133,7 @@ Partial Class Form1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem1.Text = "Unselect everything"
         '
         'Form1
         '
